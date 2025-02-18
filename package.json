@@ -1,6 +1,6 @@
 {
   "name": "@tbdc-agro-softwares/validation-helper",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A set of methods to help the validation of any primitive or non-primitive value with JS/TS",
   "main": "dist/index.js",
   "files": [
