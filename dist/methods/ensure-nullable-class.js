@@ -1,0 +1,1 @@
+"use strict";var e;Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"default",{enumerable:!0,get:function(){return r}});const t=(e=require("./ensure-class"))&&e.__esModule?e:{default:e};function r(e,r,u){return null===e?e:(0,t.default)(e,r,u)}

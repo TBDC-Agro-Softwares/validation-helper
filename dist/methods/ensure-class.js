@@ -1,0 +1,1 @@
+"use strict";var e;Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"default",{enumerable:!0,get:function(){return r}});const t=(e=require("../ValidationHelperError"))&&e.__esModule?e:{default:e};function r(e,r,n){if(!(e instanceof r)||!e)throw new t.default([n]);if(e instanceof r&&!e.id)throw new t.default([`${n}.id`]);return e}
