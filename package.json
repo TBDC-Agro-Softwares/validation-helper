@@ -1,0 +1,75 @@
+{
+  "name": "@tbdc-agro-softwares/validation-helper",
+  "version": "0.0.0",
+  "description": "A set of methods to help the validation of any primitive or non-primitive value with JS/TS",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/components.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/components.d.ts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./ValidationHelperError": {
+      "import": {
+        "types": "./dist/ValidationHelperError.d.ts",
+        "default": "./dist/ValidationHelperError.js"
+      },
+      "require": {
+        "types": "./dist/ValidationHelperError.d.ts",
+        "default": "./dist/ValidationHelperError.cjs"
+      }
+    },
+    "./*": "./dist/methods/*"
+  },
+  "types": "dist/index.d.ts",
+  "homepage": "https://github.com/tbdc-agro-softwares/validation-helper#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbdc-agro-softwares/validation-helper.git"
+  },
+  "author": "TBDC Agro Softwares <engineering@tbdc.com.br>",
+  "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
+  },
+  "keywords": [
+    "validation",
+    "zod",
+    "javascript",
+    "typescript"
+  ],
+  "scripts": {
+    "build": "rimraf dist && swc src -d dist --copy-files --strip-leading-paths",
+    "lint": "eslint src --no-fix --max-warnings 0 && tsc --noEmit --emitDeclarationOnly false",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "postbuild": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.20.0",
+    "@swc/cli": "^0.6.0",
+    "@swc/core": "^1.10.16",
+    "@typescript-eslint/eslint-plugin": "^8.24.0",
+    "@typescript-eslint/parser": "^8.24.0",
+    "eslint": "^9.20.1",
+    "eslint-plugin-vitest-globals": "^1.5.0",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.1",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "peerDependencies": {
+    "zod": "^3.24.2"
+  }
+}
