@@ -96,6 +96,14 @@ function ensureNullableEnum<T extends string>(value: T | null, options: readonly
 ```ts
 function ensureObject<T extends object>(objectValue: T, validationSchema: ZodSchema<T>, field: string): T;
 ```
+
+```ts
+function ensureEmail(email: string, field: string): string;
+```
+
+```ts
+function ensureUrl(url: string, field: string): string;
+```
 > For more information see [zod documentation](https://github.com/colinhacks/zod)
 
 ---
