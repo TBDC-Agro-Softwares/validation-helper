@@ -1,0 +1,1 @@
+"use strict";var e;Object.defineProperty(exports,"__esModule",{value:!0}),Object.defineProperty(exports,"default",{enumerable:!0,get:function(){return u}});const r=require("zod"),t=(e=require("../ValidationHelperError"))&&e.__esModule?e:{default:e};function u(e,u){let a=r.z.string().email().safeParse(e);if(!a.success)throw new t.default([u]);return a.data}
